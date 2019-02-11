@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Titel</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body>
+	<form id="test" action="#0">
+		<div>
+			<input required pattern="[^'\x22]+" type="text" id="first_name" name="first_name" placeholder=" ">
+			<label for="first_name">First Name</label>
+			<div class="requirements">
+				Must be valid characters
+			</div>
+		</div>
+		<div>
+			<input required pattern="[^'\x22]+" type="text" id="last_name" name="last_name" placeholder=" ">
+			<label for="first_name">Last Name</label>		
+		    <div class="requirements">
+				Must be valid characters
+			</div>
+		</div>	
+		<div>
+			<input required type="email" id="email" name="email" placeholder=" ">
+			<label for="email">Email</label>
+			<div class="requirements">
+				Must be a valid email address
+			</div>
+		</div>
+		<div>
+			<input required type="password" id="password" name="password" placeholder=" ">
+			<label for="password">Password</label>
+			<div class="requirements">
+				Must be a valid email password
+			</div>
+		</div>
+		<div>
+			<input required pattern="[^'\x22]+" type="text" id="address" name="adress" placeholder=" ">
+			<label for="address">Address</label>
+		</div>
+		<p>
+				<input required id="pol" type="radio" name="pol" >Male
+				<input required id="pol" type="radio" name="pol" >Female
+		</p>
+		<p>
+				<select required name="country" id="country">
+				<option disabled selected>Country</option>
+				<option value="country1">Ukraine</option>
+				<option value="country2">USA</option>
+				<option value="country3">Irland</option>
+				<option value="country4">Shos` Daleke</option>
+				<option value="country5">Des` Tam</option>
+				</select>
+		</p>
+		<p>
+				<input required type="date" placeholder="Birthday">
+		</p>
+			<p>
+				<textarea name="" id="" cols="30" rows="10" placeholder="Text messages"></textarea>
+			</p>
+		
+		<input type="submit" onclick="validate()" value="submit"/>
+		
+	</form>	
+</body>
+</html>	
